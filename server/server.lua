@@ -8,7 +8,7 @@ end
 
 RegisterCommand(Config.PanicbuttonCommand, function(source, args, rawCommand)
     local xPlayer = ESX.GetPlayerFromId(source)
-    job = xPlayer.getJob().name
+    job = xPlayer.getJob().name -- police
 
     if tablecontains(Config.AllowedJobs, job) then
         local xPlayers = ESX.GetExtendedPlayers('job', job)
